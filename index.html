@@ -1,0 +1,70 @@
+<html>
+<head>
+     <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+    <title>SQLITE</title>
+    <link href="css/sql.css" rel="stylesheet"/>
+</head>
+
+<body>
+        <header class="apptitle">
+                <h1>GIFT CARD</h1>
+            </header>
+	<nav class="tabs">
+    	<ul>
+        	<li class="li-1-3"><a href="#home" data-role="link" class="activetab" id ="ab">View</a></li>
+            <li class="li-1-3"><a href="#two"  data-role="link" class="b" id="bc">Person</a></li>
+            <li class="li-1-3"><a href="#three" data-role="link" class="c" id="cd">Occasion</a></li>
+            <li class="li-1-3"><a href="#four" data-role="link" class="c" id="de">Gift</a></li>
+        </ul>
+    </nav>
+	<section data-role="page" id="home" class="active">
+    	<h4>View Gift Ideas</h4>   
+       <select id="Ideas">
+       <option value="Ideas">List of Ideas</option>
+       </select>
+       <div id="giftIdeas"><br><br><br>
+       <ul id="di"></ul></div>
+    </section>
+
+       
+
+    <section data-role="page" id="two" class="hide">
+    <h4>Add New Person</h4>
+    <div id="addPerson">
+    <input type="text" name="person" id="person">
+    <button id="saved" type="submit">Add</button>
+    <p id="perMessage"></p>
+      </div>  
+    </section>
+
+ 
+    <section data-role="page" id="three" class="hide">
+    	<div id ="ocs">
+        <h4>Add New Occasions</h4>
+      <input type ="text" name="occasion" id="occasion">
+      <button id="save" type="submit">Add</button>
+       <p id="nwOccasion"></p>
+        </div>
+    </section>
+    
+    <section data-role="page" id="four" class="hide">
+    	<div id ="gft">
+        <h4>Add Gift Ideas</h4>
+         <select id="ocasnList">
+           </select><br><br><br>
+         <select id="pplList"><br><br><br>
+         </select><br><br><br>
+        <input type ="text" name="giftIdea" id="giftIdea"><br><br><br>
+       <button id="btnsubmit" type="submit">Save</button>
+       <p id="nwGift"></p>
+        </div>
+    </section>
+
+
+
+</body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/sql.js"></script>
+</html>
